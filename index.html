@@ -117,8 +117,57 @@
     <section>
       <h2>Contact Us</h2>
       <form action="">
-        <label for="firstName">firstname</label>
-        <input type="text" name="firstName" id="firstName" />
+        <div>
+          <label for="firstName">firstname</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Sam"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="lastName">lastname</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="George"
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="lastName">age</label>
+          <input type="number" min="15" max="98" step="2" name="age" id="age" />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="555-555-5555"
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="title">Title</label>
+          <br />
+          <label for="mr">Mr</label>
+          <input type="radio" name="mr" id="mr" value="Mr" />
+          <label for="ms">Ms</label>
+          <input type="radio" name="mr" id="ms" value="Ms" />
+        </div>
+
+        <button type="submit">Submit</button>
       </form>
     </section>
   </body>
