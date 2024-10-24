@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harvey's Tourist Inn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spinnaker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
@@ -17,80 +24,60 @@
         dolorem, explicabo asperiores assumenda repellendus animi nihil adipisci
         eius autem veritatis earum praesentium blanditiis saepe fugiat
         necessitatibus. Vero? Libero ex fugit quaerat repudiandae temporibus
-        quisquam nesciunt nulla ab ullam quas rem expedita cumque reprehenderit
-        obcaecati nisi debitis tenetur voluptas similique aliquid, eaque
-        corporis. Atque ipsam adipisci saepe soluta! Nulla tempore voluptatibus
-        repellat? Eligendi, eum minus quibusdam placeat nesciunt modi explicabo
-        illo, corporis iusto possimus pariatur? Vitae eligendi enim, blanditiis
-        impedit ad nemo! Iure architecto veritatis adipisci eligendi explicabo!
-        Harum distinctio, vero rem, libero corrupti voluptatum vitae impedit
-        voluptatem numquam pariatur cumque ullam, quod assumenda. Quos
-        asperiores, laboriosam assumenda praesentium doloribus, esse explicabo
-        dolor, magnam similique quo sed odio!
       </p>
+
+      <button class="get-started">Get Started</button>
     </header>
 
-    <br />
-
-    <section>
+    <section class="places">
       <h2>Excitng places to visit</h2>
-      <div>
+      <div class="gallery">
         <img
-          height="400"
           src="/assets/sachin-chauhan-Rtgxb60vZTs-unsplash.jpg"
           alt="mosque"
         />
         <img
-          height="400"
           src="/assets/suvin-vengilat-SloTGSWXyDA-unsplash.jpg"
           alt="beach"
         />
         <img
-          height="400"
           src="/assets/free-walking-tour-salzburg-GJArE1LlcuA-unsplash.jpg"
           alt="castle"
         />
+        <img src="/assets/g1.jpg" alt="castle" />
+        <img src="/assets/g2.jpg" alt="castle" />
+        <img src="/assets/g4.jpg" alt="castle" />
       </div>
-      <p>
-        There are countless exciting places to visit around the world, each
-        offering unique experiences and unforgettable memories. For adventure
-        seekers, destinations like New Zealand's stunning Fiordland or the
-        rugged landscapes of Iceland promise thrilling outdoor activities such
-        as hiking, glacier trekking, and exploring volcanoes. History
-        enthusiasts can immerse themselves in ancient wonders like the pyramids
-        of Egypt, the Colosseum in Rome, or the awe-inspiring temples of Angkor
-        Wat in Cambodia. For a blend of modern culture and natural beauty,
-        cities like Tokyo, Paris, and Cape Town offer vibrant urban experiences
-        alongside breathtaking scenery. Whether you're seeking relaxation on
-        pristine beaches, exploring bustling markets, or discovering hidden gems
-        in remote villages, the world is full of exciting places to satisfy
-        every type of traveler.
-      </p>
 
-      <br />
-      <h3>Popular Places</h3>
-      <ul>
-        <li>Paris, France</li>
-      </ul>
-      <ul>
-        <li>New York City, USA</li>
-      </ul>
-      <ul>
-        <li>Tokyo, Japan</li>
-      </ul>
-      <ul>
-        <li>Rome, Italy</li>
-      </ul>
-      <ul>
-        <li>Cairo, Egypt</li>
-      </ul>
+      <div class="places-content">
+        <p>
+          There are countless exciting places to visit around the world, each
+          offering unique experiences and unforgettable memories. For adventure
+          seekers, destinations like New Zealand's stunning Fiordland or the...
+        </p>
+
+        <h3>Popular Places</h3>
+        <ul>
+          <li>Paris, France</li>
+        </ul>
+        <ul>
+          <li>New York City, USA</li>
+        </ul>
+        <ul>
+          <li>Tokyo, Japan</li>
+        </ul>
+        <ul>
+          <li>Rome, Italy</li>
+        </ul>
+        <ul>
+          <li>Cairo, Egypt</li>
+        </ul>
+      </div>
     </section>
 
-    <br />
-
-    <section>
+    <section class="work-hours">
       <h3>Work hours</h3>
-      <table border="1">
+      <table>
         <tr>
           <th>Monday</th>
           <th>Tuesday</th>
@@ -112,8 +99,6 @@
       </table>
     </section>
 
-    <br />
-
     <section>
       <h2>Contact Us</h2>
       <form action="">
@@ -126,7 +111,7 @@
             placeholder="Sam"
           />
         </div>
-        <br />
+
         <div>
           <label for="lastName">lastname</label>
           <input
@@ -137,14 +122,10 @@
           />
         </div>
 
-        <br />
-
         <div>
           <label for="lastName">age</label>
           <input type="number" min="15" max="98" step="2" name="age" id="age" />
         </div>
-
-        <br />
 
         <div>
           <label for="phone">Phone</label>
@@ -156,16 +137,24 @@
           />
         </div>
 
-        <br />
-
         <div>
           <label for="title">Title</label>
-          <br />
+
           <label for="mr">Mr</label>
           <input type="radio" name="mr" id="mr" value="Mr" />
           <label for="ms">Ms</label>
           <input type="radio" name="mr" id="ms" value="Ms" />
         </div>
+
+        <label for="places">Select place</label>
+
+        <select name="places" id="places" required>
+          <option value="germany">Germany</option>
+          <option value="uk">UK</option>
+          <option value="usa">USA</option>
+          <option value="sa">South Africa</option>
+          <option value="ng">Nigeria</option>
+        </select>
 
         <button type="submit">Submit</button>
       </form>
